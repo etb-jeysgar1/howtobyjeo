@@ -1,0 +1,53 @@
+{
+  "name": "personal-website",
+  "version": "0.0.0",
+  "description": "Página hosteada en Github que me permite escribir las experiencias y aprendizajes sobre tecnologías y frameworks",
+  "main": "index.js",
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "server": "hexo server",
+    "predeploy": "npm run build",
+    "deploy": "hexo deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeyson-garcia/personal-website.git"
+  },
+  "keywords": [
+    "github",
+    "pages",
+    "static",
+    "web",
+    "site",
+    "personal",
+    "tech",
+    "jeyson",
+    "garcia"
+  ],
+  "author": "Jeyson Andrés García Rodríguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeyson-garcia/personal-website/issues"
+  },
+  "homepage": "https://github.com/jeyson-garcia/personal-website",
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  },
+  "hexo": {
+    "version": "7.0.0"
+  },
+  "dependencies": {
+    "hexo": "^7.0.0",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-landscape": "^1.0.0"
+  }
+}
