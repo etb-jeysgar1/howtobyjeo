@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="jeogarod@gmail.com">
+
+
+    <meta name="subtitle" content="Personal website">
+
+
+
+
+<title>Jeyson Andrés García Rodríguez</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Página de inicio</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Publicaciones</a>
+                
+                    <a class="menu-item" href="/category">Categorias</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">Acerca de mi</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Página de inicio</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Publicaciones</a>
+                
+                    <a class="menu-item" href="/category">Categorias</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">Acerca de mi</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                
+    <div class="container profile-container">
+    <div class="intro">
+        <div class="avatar">
+            <a href="/"><img src="/image/jeonegro2.jpg"></a>
+        </div>
+        <div class="nickname">Jeyson Andrés García Rodríguez</div>
+        <div class="description"><div style="font-size:16px;margin:20px;padding:0px">Tecnologías, frameworks & otros aprendizajes tecnologícos en momentos de desparche <br> <div style="font-size:12px;margin:0px;padding:0px">Nina 🐕 m'a appris qu'il n'existe aucun autre être vivant plus fidèle qu'elle.</div></div></div>
+        <div class="links">
+            
+                
+                    <a class="link-item" title="Blog" href="/archives">
+                        
+                        
+                            <i class="iconfont icon-blog"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="ZhiHu" target="_blank" rel="noopener" href="https://www.zhihu.com/people/sirice">
+                        
+                        
+                            <i class="iconfont icon-zhihu"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Instagram" href="">
+                        
+                        
+                            <i class="iconfont icon-instagram"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Reddit" href="">
+                        
+                        
+                            <i class="iconfont icon-reddit"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Github" target="_blank" rel="noopener" href="https://github.com/etb-jeysgar1/">
+                        
+                        
+                            <i class="iconfont icon-github"></i>
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© jeogarod@gmail.com | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
